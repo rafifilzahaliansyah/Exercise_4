@@ -35,8 +35,7 @@ namespace Exercise_4
         
         public int count()
         {
-
-
+            return i;
         }
     }
     class Program
