@@ -22,6 +22,8 @@ namespace Exercise_4
             {
                 a[Rafi] = e;
                 Rafi = Rafi + 1;
+                Console.WriteLine("\n" + e + "sudah terpush");
+                    
             }
         }
         public void pop()
@@ -81,14 +83,13 @@ namespace Exercise_4
                 switch (ch)
                 {
                     case '1':
-                        Console.Write("\nEnter a Number : ");
-                        int num = Convert.ToInt32(Console.ReadLine());
-                        s.push(num);
+                        Console.Write("\nmasukkan nama : ");
+                        string name = Console.ReadLine();
                         break;
                     case '2':
                         if(s.Empty())
                         {
-                            Console.WriteLine("\nStack Empty");
+                            Console.WriteLine("\nrafi");
                             break;
                         }
                         s.pop();
