@@ -13,7 +13,7 @@ namespace Exercise_4
 
         public void push(int e)
         {
-            int f = count();
+            int f = display();
             if(f==a.Length)
             {
                 Console.WriteLine("stack is full");
@@ -26,7 +26,17 @@ namespace Exercise_4
         }
         public void pop()
         {
-
+            bool f = Empty();
+            if(f==true)
+            {
+                Console.WriteLine("stack is empty");
+            }
+            else
+            {
+                int e = top();
+                i = i - 1;
+                Console.WriteLine(e);
+            }
         }
         public int top()
         {
@@ -36,19 +46,36 @@ namespace Exercise_4
             return e;
         }
         
-        public int count()
+        public int display()
         {
             return i;
         }
         public bool Empty()
         {
-
+            if (display()==0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
     class Program
     {
         static void Main(string[] args)
         {
+            stack s = new stack();
+            while(true)
+            {
+                Console.WriteLine();
+                Console.WriteLine("\n***Stack Menu***");
+                Console.WriteLine("1. Push ");
+                Console.WriteLine("2. Pop ");
+                Console.WriteLine("3. Display ");
+                Console.WriteLine("4. Exit ");
+            }
         }
     }
 }
