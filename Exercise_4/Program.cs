@@ -9,7 +9,7 @@ namespace Exercise_4
     class stack
     {
         public int[] a = new int[52];
-        public int i = 0;
+        public int Rafi = 0;
 
         public void push(int e)
         {
@@ -20,8 +20,8 @@ namespace Exercise_4
             }
             else
             {
-                a[i] = e;
-                i = i + 1;
+                a[Rafi] = e;
+                Rafi = Rafi + 1;
             }
         }
         public void pop()
@@ -34,21 +34,21 @@ namespace Exercise_4
             else
             {
                 int e = top();
-                i = i - 1;
+                Rafi = Rafi - 1;
                 Console.WriteLine(e);
             }
         }
         public int top()
         {
             int e;
-            e = a[i - 1];
-            a[i - 1] = 0;
+            e = a[Rafi - 1];
+            a[Rafi - 1] = 0;
             return e;
         }
         
         public int display()
         {
-            return i;
+            return Rafi;
         }
         public bool Empty()
         {
