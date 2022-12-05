@@ -30,12 +30,19 @@ namespace Exercise_4
         }
         public int top()
         {
-
+            int e;
+            e = a[i - 1];
+            a[i - 1] = 0;
+            return e;
         }
         
         public int count()
         {
             return i;
+        }
+        public bool Empty()
+        {
+
         }
     }
     class Program
