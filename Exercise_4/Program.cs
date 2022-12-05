@@ -24,6 +24,11 @@ namespace Exercise_4
                 i = i + 1;
             }
         }
+        public void pop()
+        {
+
+        }
+        
         public int count()
         {
 
