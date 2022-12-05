@@ -85,6 +85,22 @@ namespace Exercise_4
                         int num = Convert.ToInt32(Console.ReadLine());
                         s.push(num);
                         break;
+                    case '2':
+                        if(s.Empty())
+                        {
+                            Console.WriteLine("\nStack Empty");
+                            break;
+                        }
+                        s.pop();
+                        break;
+                    case '3':
+                        s.display();
+                        break;
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid Choice");
+                        break;
                 }
             }
         }
