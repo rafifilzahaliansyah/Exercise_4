@@ -28,6 +28,10 @@ namespace Exercise_4
         {
 
         }
+        public int top()
+        {
+
+        }
         
         public int count()
         {
